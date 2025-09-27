@@ -1,11 +1,19 @@
 import java.time.LocalDate;
 
-class Task{
+public class Task {
 
     private int id;
     private String description;
     private LocalDate deadline;
     private boolean done;
+
+
+    public Task (int id, String description, LocalDate deadline, boolean done){
+        this.id = id;
+        this.description = description;
+        this.deadline = deadline;
+        this.done = false;
+    }
 
     public void setId(int id) {
         this.id = id;
@@ -38,4 +46,10 @@ class Task{
     public boolean isDone() {
         return done;
     }
+
+    @Override
+    public String toString(){
+        return id + " - " +description+ " | deadline: " +deadline+ " | done: " +done;
+    }
+
 }
