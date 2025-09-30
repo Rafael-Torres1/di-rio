@@ -7,14 +7,6 @@ public class Task {
     private LocalDate deadline;
     private boolean done;
 
-
-    public Task (int id, String description, LocalDate deadline, boolean done){
-        this.id = id;
-        this.description = description;
-        this.deadline = deadline;
-        this.done = false;
-    }
-
     public void setId(int id) {
         this.id = id;
     }
